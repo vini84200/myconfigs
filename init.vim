@@ -23,12 +23,22 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
 
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+
 
 " Theme: Gruvbox
 Plug 'gruvbox-community/gruvbox'
 call plug#end()
 
+
+lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
+
+
 colorscheme gruvbox
 highlight Normal guibg=none
 
 let mapleader = " "
+
+
+nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
