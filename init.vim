@@ -25,7 +25,7 @@ Plug 'nvim-treesitter/playground'
 
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Theme: Gruvbox
 Plug 'gruvbox-community/gruvbox'
